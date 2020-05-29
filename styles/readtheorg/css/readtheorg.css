@@ -1475,3 +1475,13 @@ pre.src {
 pre.src-org {
   background: #effef2;
 }
+
+#content h1.title {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+#content h1,
+h2 {
+  color: #2980b9;
+}
