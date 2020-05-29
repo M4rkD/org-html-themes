@@ -1485,3 +1485,8 @@ pre.src-org {
 h2 {
   color: #2980b9;
 }
+
+img {
+  border: 1px solid #ebebeb;
+  padding: 20px;
+}
