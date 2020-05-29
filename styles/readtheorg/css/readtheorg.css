@@ -1467,3 +1467,11 @@ span.section-number-4,
 span.section-number-5 {
   padding-right: 10px;
 }
+
+pre.src {
+  background: #f5fbff;
+}
+
+pre.src-org {
+  background: #effef2;
+}
