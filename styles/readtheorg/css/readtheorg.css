@@ -1469,9 +1469,9 @@ span.section-number-5 {
 }
 
 pre.src {
-  background: #f5fbff;
+  background: #ebebeb;
+  box-shadow: 5px 5px 5px #e9e9e9;
 }
-
 pre.src-org {
   background: #effef2;
 }
