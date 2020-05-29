@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
+h1,h2,h3,h4,h5,h6 span{
+    padding-right:10px;
+}
+
 h1,h2,h3,h4,h5,h6,legend{
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     font-weight:700;
@@ -788,6 +792,8 @@ hr{
     scrollbar-arrow-color: #b3b3b3;
     scrollbar-shadow-color: #1F1D1D;
     scrollbar-track-color : #343131;
+    border-right: 1px solid black;
+    box-shadow: 5px 0px 12px #adadad;
 }
 
 #table-of-contents h2{
@@ -1094,3 +1100,12 @@ h2.footnotes{
     padding: 9px 12px;
     margin-bottom: 24px;
     font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif}
+
+#content h1 {
+    color: #2980B9;
+    padding-bottom: 24px;
+}
+
+span.section-number-1, span.section-number-2,span.section-number-3,span.section-number-4,span.section-number-5 {
+    padding-right: 10px;
+}
