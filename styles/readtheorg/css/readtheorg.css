@@ -1490,3 +1490,11 @@ img {
   border: 1px solid #ebebeb;
   padding: 20px;
 }
+
+p.toggle-code-span {
+  width: 100%;
+  text-align: right;
+  display: block;
+  font-size: 70%;
+  margin: 0px;
+}
