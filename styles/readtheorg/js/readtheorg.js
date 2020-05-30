@@ -74,6 +74,9 @@ $(document).ready(function () {
       500
     );
   });
+
+  // Set title on sidebar/table of contents
+  $("#table-of-contents h2").text($(".title").text());
 });
 
 window.SphinxRtdTheme = (function (jquery) {
