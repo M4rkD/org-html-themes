@@ -69,7 +69,7 @@ $(document).ready(function () {
     // scroll to element
     $("html, body").animate(
       {
-        scrollTop: pos - 15,
+        scrollTop: pos,
       },
       500
     );
