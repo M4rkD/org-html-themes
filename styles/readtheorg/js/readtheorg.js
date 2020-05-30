@@ -56,8 +56,24 @@ $(document).ready(function () {
   var tocTitle = $("#table-of-contents").find("h2");
   tocTitle.append(closeBtn);
 
+  // links to tags in the same page don't work on OneDrive
+  // Force these to work by emulating the behaviour with javascript
+  $('a[href^="#org"]').click(function (e) {
+    // prevent default following of links
+    e.preventDefault();
 
+    // get top of element position
+    var el = $(e.target.getAttribute("href"));
+    var pos = el.offset().top;
 
+    // scroll to element
+    $("html, body").animate(
+      {
+        scrollTop: pos - 15,
+      },
+      500
+    );
+  });
 });
 
 window.SphinxRtdTheme = (function (jquery) {
