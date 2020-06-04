@@ -86,7 +86,7 @@ $(document).ready(function () {
       element.toggle();
     });
     element.before($("<p class='toggle-code-span'>").append(toggle_code_a));
-    element.hide();
+    element.show();
   });
 });
 
