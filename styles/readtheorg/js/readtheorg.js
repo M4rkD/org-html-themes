@@ -93,7 +93,7 @@ $(document).ready(function () {
   $(".org-src-container .src-R").hide()
   
   $("#postamble").append(
-    $("<a class='.toggle-code-link'>toggle code</a>").click(
+    $("<a class='.toggle-code-link'>toggle source view</a>").click(
       function() {
         $(".org-src-container .src-R").toggle()
       }));
