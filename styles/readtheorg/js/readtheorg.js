@@ -79,15 +79,22 @@ $(document).ready(function () {
   $("#table-of-contents h2").text($(".title").text());
 
   // add toggle code buttons
-  $(".org-src-container .src").each(function (index) {
-    var toggle_code_a = $("<a class='toggle-code-link'>").append("code");
-    var element = $(this);
-    toggle_code_a.click(function (e) {
-      element.toggle();
-    });
-    element.before($("<p class='toggle-code-span'>").append(toggle_code_a));
-    element.show();
-  });
+  //$(".org-src-container .src").each(function (index) {
+  //  var toggle_code_a = $("<a class='toggle-code-link'>").append("code");
+  //  var element = $(this);
+  //  toggle_code_a.click(function (e) {
+  //    element.toggle();
+  //  });
+  //  element.before($("<p class='toggle-code-span'>").append(toggle_code_a));
+  //  element.show();
+  //});
+  
+  //Global toggle code buttons
+  $("#postamble").append(
+    $("<a class='.toggle-code-link'>toggle code</a>").click(
+      function() {
+        $(".org-src-container .src").toggle()
+      }));
 });
 
 window.SphinxRtdTheme = (function (jquery) {
