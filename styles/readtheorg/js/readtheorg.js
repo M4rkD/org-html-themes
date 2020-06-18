@@ -90,10 +90,12 @@ $(document).ready(function () {
   //});
   
   // Global toggle code buttons
+  $(".org-src-container .src-R").hide()
+  
   $("#postamble").append(
     $("<a class='.toggle-code-link'>toggle code</a>").click(
       function() {
-        $(".org-src-container .src").toggle()
+        $(".org-src-container .src-R").toggle()
       }));
   
   // Use fancybox for all images
