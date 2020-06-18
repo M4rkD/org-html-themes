@@ -89,12 +89,15 @@ $(document).ready(function () {
   //  element.show();
   //});
   
-  //Global toggle code buttons
+  // Global toggle code buttons
   $("#postamble").append(
     $("<a class='.toggle-code-link'>toggle code</a>").click(
       function() {
         $(".org-src-container .src").toggle()
       }));
+  
+  // Use fancybox for all images
+  $("img").fancybox();
 });
 
 window.SphinxRtdTheme = (function (jquery) {
