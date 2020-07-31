@@ -99,7 +99,7 @@ $(document).ready(function () {
       }));
   
   // Use fancybox for all images
-  $("img").fancybox();
+  //$("img").fancybox();
 });
 
 window.SphinxRtdTheme = (function (jquery) {
